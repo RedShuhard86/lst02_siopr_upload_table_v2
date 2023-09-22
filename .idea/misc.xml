@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://schemas.xmlsoap.org/soap/encoding/" location="$PROJECT_DIR$" />
+    <resource url="http://schemas.xmlsoap.org/wsdl/" location="$PROJECT_DIR$" />
+    <resource url="http://schemas.xmlsoap.org/wsdl/http/" location="$PROJECT_DIR$" />
+    <resource url="http://schemas.xmlsoap.org/wsdl/soap/" location="$PROJECT_DIR$" />
+    <resource url="http://schemas.xmlsoap.org/wsdl/soap12/" location="$PROJECT_DIR$" />
+    <resource url="https://schemas.xmlsoap.org/wsdl/mime/" location="$PROJECT_DIR$" />
+  </component>
+</project>

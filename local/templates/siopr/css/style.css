@@ -1,0 +1,58 @@
+#tabs_select_form ,
+#groups_select_form,
+#fields_select_form,
+#select_left_form,
+#select_right_form{
+    padding: 5px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    height: 900px;
+}
+
+#tabs_select_form div,
+#groups_select_form li,
+#fields_select_form div,
+#select_left_form div,
+#select_right_form div
+{
+    background: none;
+    border-right: 1px solid #333;
+    font-size: 12px;
+    overflow: hidden;
+}
+#tabs_select_form div.row,
+#fields_select_form div.row,
+#select_left_form div.row,
+#select_right_form div.row {
+    border-bottom: 1px solid #333;
+}
+
+#tabs_select_form div.active,
+#groups_select_form li.active,
+#fields_select_form div.active
+{
+    background: #f5d400;
+}
+
+#edit_element{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 200px;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    width: 500px;
+    left: calc(50% - 250px);
+}
+.elements, .all_elements{
+    height: 350px;
+    overflow-y: auto !important;
+}
+.tab{
+    display: none;
+}
+.tab_1{
+    display: flex;
+}

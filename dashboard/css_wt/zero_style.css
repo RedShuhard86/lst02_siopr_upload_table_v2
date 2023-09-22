@@ -1,0 +1,57 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a {color: inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+
+@font-face {
+    font-family: r-black; 
+    src: url(../fonts/Roboto-Black.ttf); 
+}
+@font-face {
+    font-family: r-bold; 
+    src: url(../fonts/Roboto-Bold.ttf); 
+}
+@font-face {
+    font-family: r-medium; 
+    src: url(../fonts/Roboto-Medium.ttf); 
+}
+@font-face {
+    font-family: r-reg; 
+    src: url(../fonts/Roboto-Regular.ttf); 
+}
+@font-face {
+    font-family: r-thin; 
+    src: url(../fonts/Roboto-Thin.ttf); 
+}
+
+.color_red {
+    color: #F5666F;
+}
+.color_green {
+    color: #52C773;
+}
+.color_blue {
+    color: #1A78E2;
+}
+
+
+

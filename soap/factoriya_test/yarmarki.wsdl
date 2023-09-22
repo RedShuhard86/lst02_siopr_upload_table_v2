@@ -1,0 +1,349 @@
+<?xml version ='1.0' encoding ='UTF-8' ?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             name="yarmarki"
+             targetNamespace="http://lst02.camco/soap/factoriya_test"
+             xmlns:tns="http://lst02.camco/soap/factoriya_test"
+             xmlns:bind='http://schemas.xmlsoap.org/wsdl/soap/'
+             xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/'
+             xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+
+             >
+    <message name="GetItemGroupRequestMessage">
+        <part name="parameters" element="tns:GetItemGroup"/>
+    </message>
+    <message name="GetItemGroupResponseMessage">
+        <part name="parameters" element="tns:GetItemGroupResponse"/>
+    </message>
+    <message name="GetMinItemListRequestMessage">
+        <part name="parameters"
+              element="tns:GetMinItemList"/>
+    </message>
+    <message name="GetMinItemListResponseMessage">
+        <part name="parameters"
+              element="tns:GetMinItemListResponse"/>
+    </message>
+    <message name="GetAddItemListRequestMessage">
+        <part name="parameters"
+              element="tns:GetAddItemList"/>
+    </message>
+    <message name="GetAddItemListResponseMessage">
+        <part name="parameters"
+              element="tns:GetAddItemListResponse"/>
+    </message>
+    <message name="GetYarmarkiRequestMessage">
+        <part name="parameters"
+              element="tns:GetYarmarki"/>
+    </message>
+    <message name="GetYarmarkiResponseMessage">
+        <part name="parameters"
+              element="tns:GetYarmarkiResponse"/>
+    </message>
+    <message name="GetQmestRequestMessage">
+        <part name="parameters"
+              element="tns:GetQmest"/>
+    </message>
+    <message name="GetQmestResponseMessage">
+        <part name="parameters"
+              element="tns:GetQmestResponse"/>
+    </message>
+    <message name="GetPicRequestMessage">
+        <part name="parameters"
+              element="tns:GetPic"/>
+    </message>
+    <message name="GetPicResponseMessage">
+        <part name="parameters"
+              element="tns:GetPicResponse"/>
+    </message>
+    <message name="SendZayavkaRequestMessage">
+        <part name="parameters"
+              element="tns:SendZayavka"/>
+    </message>
+    <message name="SendZayavkaResponseMessage">
+        <part name="parameters"
+              element="tns:SendZayavkaResponse"/>
+    </message>
+    <message name="GetPeriodRequestMessage">
+        <part name="parameters"
+              element="tns:GetPeriod"/>
+    </message>
+    <message name="GetPeriodResponseMessage">
+        <part name="parameters"
+              element="tns:GetPeriodResponse"/>
+    </message>
+    <message name="GetRequestPeriodsRequestMessage">
+        <part name="parameters"
+              element="tns:GetRequestPeriods"/>
+    </message>
+    <message name="GetRequestPeriodsResponseMessage">
+        <part name="parameters"
+              element="tns:GetRequestPeriodsResponse"/>
+    </message>
+    <message name="GetYarmarkiAllRequestMessage">
+        <part name="parameters"
+              element="tns:GetYarmarkiAll"/>
+    </message>
+    <message name="GetYarmarkiAllResponseMessage">
+        <part name="parameters"
+              element="tns:GetYarmarkiAllResponse"/>
+    </message>
+    <message name="GetYarmarkiTrustRequestMessage">
+        <part name="parameters"
+              element="tns:GetYarmarkiTrust"/>
+    </message>
+    <message name="GetYarmarkiTrustResponseMessage">
+        <part name="parameters"
+              element="tns:GetYarmarkiTrustResponse"/>
+    </message>
+    <message name="GetTrusteeRequestMessage">
+        <part name="parameters"
+              element="tns:GetTrustee"/>
+    </message>
+    <message name="GetTrusteeResponseMessage">
+        <part name="parameters"
+              element="tns:GetTrusteeResponse"/>
+    </message>
+    <message name="GetFLByTrusteeRequestMessage">
+        <part name="parameters"
+              element="tns:GetFLByTrustee"/>
+    </message>
+    <message name="GetFLByTrusteeResponseMessage">
+        <part name="parameters"
+              element="tns:GetFLByTrusteeResponse"/>
+    </message>
+    <message name="GetParticipantListRequestMessage">
+        <part name="parameters"
+              element="tns:GetParticipantList"/>
+    </message>
+    <message name="GetParticipantListResponseMessage">
+        <part name="parameters"
+              element="tns:GetParticipantListResponse"/>
+    </message>
+    <message name="GetPeriodTrustRequestMessage">
+        <part name="parameters"
+              element="tns:GetPeriodTrust"/>
+    </message>
+    <message name="GetPeriodTrustResponseMessage">
+        <part name="parameters"
+              element="tns:GetPeriodTrustResponse"/>
+    </message>
+    <portType name="yarmarkiPortType">
+        <operation name="GetItemGroup">
+            <input message="tns:GetItemGroupRequestMessage"/>
+            <output message="tns:GetItemGroupResponseMessage"/>
+        </operation>
+        <operation name="GetMinItemList">
+            <input message="tns:GetMinItemListRequestMessage"/>
+            <output message="tns:GetMinItemListResponseMessage"/>
+        </operation>
+        <operation name="GetAddItemList">
+            <input message="tns:GetAddItemListRequestMessage"/>
+            <output message="tns:GetAddItemListResponseMessage"/>
+        </operation>
+        <operation name="GetYarmarki">
+            <input message="tns:GetYarmarkiRequestMessage"/>
+            <output message="tns:GetYarmarkiResponseMessage"/>
+        </operation>
+        <operation name="GetQmest">
+            <input message="tns:GetQmestRequestMessage"/>
+            <output message="tns:GetQmestResponseMessage"/>
+        </operation>
+        <operation name="GetPic">
+            <input message="tns:GetPicRequestMessage"/>
+            <output message="tns:GetPicResponseMessage"/>
+        </operation>
+        <operation name="SendZayavka">
+            <input message="tns:SendZayavkaRequestMessage"/>
+            <output message="tns:SendZayavkaResponseMessage"/>
+        </operation>
+        <operation name="GetPeriod">
+            <input message="tns:GetPeriodRequestMessage"/>
+            <output message="tns:GetPeriodResponseMessage"/>
+        </operation>
+        <operation name="GetRequestPeriods">
+            <input message="tns:GetRequestPeriodsRequestMessage"/>
+            <output message="tns:GetRequestPeriodsResponseMessage"/>
+        </operation>
+        <operation name="GetYarmarkiAll">
+            <input message="tns:GetYarmarkiAllRequestMessage"/>
+            <output message="tns:GetYarmarkiAllResponseMessage"/>
+        </operation>
+        <operation name="GetYarmarkiTrust">
+            <input message="tns:GetYarmarkiTrustRequestMessage"/>
+            <output message="tns:GetYarmarkiTrustResponseMessage"/>
+        </operation>
+        <operation name="GetTrustee">
+            <input message="tns:GetTrusteeRequestMessage"/>
+            <output message="tns:GetTrusteeResponseMessage"/>
+        </operation>
+        <operation name="GetFLByTrustee">
+            <input message="tns:GetFLByTrusteeRequestMessage"/>
+            <output message="tns:GetFLByTrusteeResponseMessage"/>
+        </operation>
+        <operation name="GetParticipantList">
+            <input message="tns:GetParticipantListRequestMessage"/>
+            <output message="tns:GetParticipantListResponseMessage"/>
+        </operation>
+        <operation name="GetPeriodTrust">
+            <input message="tns:GetPeriodTrustRequestMessage"/>
+            <output message="tns:GetPeriodTrustResponseMessage"/>
+        </operation>
+    </portType>
+    <binding name="yarmarkiSoapBinding" type="tns:yarmarkiPortType">
+        <bind:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+            <operation name="GetItemGroup">
+                <bind:operation style="rpc" soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetItemGroup"/>
+                <input>
+                    <bind:body use="literal"/>
+                </input>
+                <output>
+                    <bind:body use="literal"/>
+                </output>
+            </operation>
+            <operation name="GetMinItemList">
+                <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetMinItemList"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetAddItemList">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetAddItemList"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetYarmarki">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetYarmarki"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetQmest">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetQmest"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetPic">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetPic"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="SendZayavka">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:SendZayavka"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetPeriod">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetPeriod"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetRequestPeriods">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetRequestPeriods"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetYarmarkiAll">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetYarmarkiAll"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetYarmarkiTrust">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetYarmarkiTrust"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetTrustee">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetTrustee"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetFLByTrustee">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetFLByTrustee"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetParticipantList">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetParticipantList"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="GetPeriodTrust">
+            <bind:operation style="rpc"
+                                soapAction="http://lst02.camco/soap/factoriya_test/yarmarki#yarmarki:GetPeriodTrust"/>
+            <input>
+                <bind:body use="literal"/>
+            </input>
+            <output>
+                <bind:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="yarmarki">
+        <port name="yarmarkiSoap" binding="yarmarkiSoapBinding">
+            <bind:address location="http://lst02.camco/soap/factoriya_test/yarmarki.wsdl"/>
+        </port>
+
+    </service>
+</definitions>
